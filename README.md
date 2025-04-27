@@ -24,6 +24,8 @@ This program, [mlfq.py](mlfq.py), allows you to see how the MLFQ scheduler prese
    <details>
    <summary>Answer</summary>
 
+**Nota:** LAs salidas de cada uno de los comandos a continuación se peuden ver en la carpeta *outputs*
+
 **Figura 8.2** 
 
 time slice = allotment = 10ms
