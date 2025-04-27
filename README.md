@@ -24,67 +24,67 @@ This program, [mlfq.py](mlfq.py), allows you to see how the MLFQ scheduler prese
    <details>
    <summary>Answer</summary>
 
-**Nota:** LAs salidas de cada uno de los comandos a continuación se peuden ver en la carpeta *outputs*
+   **Nota:** Las salidas de cada uno de los comandos a continuación se peuden ver en la carpeta *outputs*
 
-**Figura 8.2** 
+   **Figura 8.2** 
 
-time slice = allotment = 10ms
+   time slice = allotment = 10ms
 
-n_jobs = 1
+   n_jobs = 1
 
-n_queue = 3 
+   n_queue = 3 
 
-```bash
-python3 ./mlfq.py -l 0,200,0 -a 1 -q 10 -i 0 -c
-```
+   ```bash
+   python3 ./mlfq.py -l 0,200,0 -a 1 -q 10 -i 0 -c
+   ```
 
-**Figure 8.3 (izquierda)**
+   **Figure 8.3 (izquierda)**
 
-Job B
+   Job B
 
-- start time = 100
+   - start time = 100
 
-- run time = 20
+   - run time = 20
 
-```bash
-python3 ./mlfq.py -l 0,200,0:100,20,0 -a 1 -q 10 -i 0 -c
-```
+   ```bash
+   python3 ./mlfq.py -l 0,200,0:100,20,0 -a 1 -q 10 -i 0 -c
+   ```
 
-**Figura 8.3 (derecha)**
+   **Figura 8.3 (derecha)**
 
-```bash
-python3 ./mlfq.py -l 0,200,0:50,20,1 -a 1 -q 10 -i 9 -c -S
-```
+   ```bash
+   python3 ./mlfq.py -l 0,200,0:50,20,1 -a 1 -q 10 -i 9 -c -S
+   ```
 
-**Figura 8.4 (izquierda)**
+   **Figura 8.4 (izquierda)**
 
-```bash
-python3 ./mlfq.py -l 0,200,0:100,50,1:100,50,1 -a 1 -q 10 -i 1 -S -c
-```
+   ```bash
+   python3 ./mlfq.py -l 0,200,0:100,50,1:100,50,1 -a 1 -q 10 -i 1 -S -c
+   ```
 
-**Figura 8.4 (derecha)**
+   **Figura 8.4 (derecha)**
 
-```bash
-python3 ./mlfq.py -l 100,50,1:100,50,1:0,200,0 -a 1 -q 10 -i 1 -S -B 20 -c
-```
+   ```bash
+   python3 ./mlfq.py -l 100,50,1:100,50,1:0,200,0 -a 1 -q 10 -i 1 -S -B 20 -c
+   ```
 
-**Figura 8.5 (izquierda)**
+   **Figura 8.5 (izquierda)**
 
-```bash
-python3 ./mlfq.py -l 0,200,0:80,100,9 -q 10 -i 1 -S  -c
-```
+   ```bash
+   python3 ./mlfq.py -l 0,200,0:80,100,9 -q 10 -i 1 -S  -c
+   ```
 
-**Figura 8.5 (derecha)**
+   **Figura 8.5 (derecha)**
 
-```bash
-python3 ./mlfq.py -l 0,200,0:80,100,9 -q 10 -i 1  -c
-```
+   ```bash
+   python3 ./mlfq.py -l 0,200,0:80,100,9 -q 10 -i 1  -c
+   ```
 
-**Figure 8.6**
+   **Figure 8.6**
 
-```bash
-python3 ./mlfq.py -l 0,200,0:0,200,0 -a 2 -Q 10,20,40 -c
-```
+   ```bash
+   python3 ./mlfq.py -l 0,200,0:0,200,0 -a 2 -Q 10,20,40 -c
+   ```
    </details>
    <br>
 
